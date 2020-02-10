@@ -323,7 +323,7 @@ class Page extends React.Component {
                     >
                         <TextContentWrap>
                             <Paragraph>
-                                I'm a 21 year old student at The Technical University of Kenya
+                                I'm a student at The Technical University of Kenya
                                 currently studying Computer Technology.
                                 <br />
                                 <br />
