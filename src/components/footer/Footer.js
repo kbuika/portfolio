@@ -118,7 +118,7 @@ function Footer(props) {
                 </Variable>
                 <SubContainer>
                     <TextContent>
-                        <Heading>Let's Build Something Together</Heading>
+                        <Heading>You have a project in mind?</Heading>
                         <SubParagraph>
                             Feel free to reach out if you're looking for a
                             developer, have a question, or just want to connect.
