@@ -432,7 +432,7 @@ class Page extends React.Component {
                         <TextContent>
                             <Heading>Projects I've worked on </Heading>
                             <SubParagraph>
-                                With my skills I have worked on a couple of projects, some in a team. Have a look.
+                                With my skills I have worked on a couple of projects, some individually and others in a team. Have a look.
                             </SubParagraph>
                         </TextContent>
                     </SubContainer>
