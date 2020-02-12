@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { breakpoints } from "../components/Media";
+import { Link } from "gatsby";
 
 const Layout = styled.div`
   display: flex;
@@ -15,10 +16,26 @@ const Layout = styled.div`
   }
 `;
 
+const Header = styled.div`
+  text-align: center;
+  flex: 1;
+  justify-content: center;
+`;
+
+const Text = styled.div`
+  margin-top: 10px;
+  font-size: 15px;
+`;
+
 const NotFoundPage = () => (
   <Layout>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <Header>Not Found</Header>
+    <Text>The page does not exist</Text>
+
+    <Link title='home' to='/'>
+      Home
+    </Link>
+
   </Layout>
 );
 
