@@ -1,20 +1,18 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
 import { breakpoints } from '../components/Media';
-import Logo from '../components/Logo';
+// import Logo from '../components/Logo';
 import Heading from '../components/Heading';
 import Paragraph from '../components/Paragraph';
-import ContactEmail from '../components/ContactEmail';
+// import ContactEmail from '../components/ContactEmail';
 import Footer from '../components/footer';
 import ProjectRow from '../components/ProjectRow';
-import ProjectRow2 from '../components/ProjectRow2';
-import FullProjectRow from '../components/FullProjectRow';
+// import ProjectRow2 from '../components/ProjectRow2';
 import quotation from '../images/quotation.png';
-import Loading from '../components/Loading';
-import LandingImage from '../images/LandingImage.jpg';
+// import Loading from '../components/Loading';
 import insta from '../images/social/insta.png';
 import twitter from '../images/social/twitter.png';
 import git from '../images/social/git.png';
@@ -184,25 +182,6 @@ const SkillContent = styled.div`
     width: 100%;
 `;
 
-const HeadingImage = styled.div`
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    width: 100%;
-    border-radius: 4px;
-    height: 300px;
-    background-size: cover;
-    background-image: url(${LandingImage});
-    background-color: #f5f5f5;
-    background-position: center;
-
-    @media (min-width: ${breakpoints.mobileMax}) {
-        width: 100%;
-        height: 400px;
-        background-position-x: right;
-        background-position-y: center;
-    }
-`;
 
 const SubParagraph = styled(Paragraph)`
     margin-top: 10px;
@@ -213,11 +192,7 @@ const SubParagraph = styled(Paragraph)`
     }
 `;
 
-const SubText = styled.div`
-    margin-top: 20px;
-    margin-left: 30px;
-    
-`;
+
 
 class Page extends React.Component {
     constructor(props) {
@@ -287,7 +262,7 @@ class Page extends React.Component {
                             <MaxHeading>
                                Hey, I’m Steve Kibuika. <br />
                                 Front End Developer <br />
-                                and idealist.
+                                and Student.
                             </MaxHeading>
                             <br />
                             <HeadingElements>
@@ -326,14 +301,15 @@ class Page extends React.Component {
                                 I'm a student at The Technical University of Kenya
                                 currently studying Computer Technology.
                                 <br />
-                                <br />
+                                {/* <br />
                                 As a developer, I have worked for and with great developers who have 
-                                taught me how to build great Web Applications.
+                                taught me how to build great Web Applications. */}
                             </Paragraph>
                         </TextContentWrap>
                         <TextContentWrap>
                             <Paragraph>
-                                Through the years, I have been part of teams that have built products with great standards with clean code that is easily scalable and maintainable.
+                            As a developer, I have worked for and with great developers who have 
+                                taught me how to build great Web Applications.
                             </Paragraph>
                         </TextContentWrap>
                     </Container>
@@ -342,55 +318,6 @@ class Page extends React.Component {
                             <SkillContent>
                                 <TextContent>
                                     <Heading>My Skills</Heading>
-                                    {/* <Paragraph>
-                                        Apart from the courses included in my
-                                        degree, I've taken a number of online
-                                        courses such as{' '}
-                                        <a
-                                            title='The Complete Javascript Course'
-                                            target='_blank'
-                                            rel='noreferrer'
-                                            href='https://www.udemy.com/the-complete-javascript-course/'
-                                        >
-                                            The Complete Javascript Course
-                                        </a>
-                                        ,{' '}
-                                        <a
-                                            title='Advanced CSS & Sass'
-                                            target='_blank'
-                                            rel='noreferrer'
-                                            href='https://www.udemy.com/advanced-css-and-sass/'
-                                        >
-                                            Advanced CSS & Sass
-                                        </a>
-                                        ,{' '}
-                                        <a
-                                            title='React: The Complete Guide'
-                                            target='_blank'
-                                            rel='noreferrer'
-                                            href='https://www.udemy.com/react-the-complete-guide-incl-redux/'
-                                        >
-                                            React: the Complete Guide
-                                        </a>
-                                        ,{' '}
-                                        <a
-                                            title='Javascript 30'
-                                            target='_blank'
-                                            rel='noreferrer'
-                                            href='https://javascript30.com/'
-                                        >
-                                            Javascript 30
-                                        </a>
-                                        , and I'm currently taking{' '}
-                                        <a
-                                            title='ES6 For Everyone'
-                                            target='_blank'
-                                            rel='noreferrer'
-                                            href='https://es6.io/'
-                                        >
-                                            ES6 for Everyone
-                                        </a>
-                                    </Paragraph> */}
                                 </TextContent>
                                 <SkillTable>
                                     <row>
@@ -436,16 +363,10 @@ class Page extends React.Component {
                             </SubParagraph>
                         </TextContent>
                     </SubContainer>
-                    <SubText>
-                        Coming Soon..
-                    </SubText>
-                    {/* <SubContainer>
-                        <FullProjectRow />
-                    </SubContainer> */}
-                    {/* <SubContainer>
+                    <SubContainer>
                         <ProjectRow />
                     </SubContainer>
-                    <SubContainer style={{ marginBottom: 75 }}>
+                    {/* <SubContainer style={{ marginBottom: 75 }}>
                         <ProjectRow2 />
                     </SubContainer> */}
                 </Layout>

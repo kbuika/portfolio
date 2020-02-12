@@ -4,8 +4,9 @@ import styled from 'styled-components';
 import { breakpoints } from '../Media';
 import Heading from '../Heading';
 import Paragraph from '../Paragraph';
-import CoffeeThumb from '../../images/CoffeeThumb.jpg';
-import decore from '../../images/decore.jpg';
+import kejaAfrica2 from '../../images/kejaAfrica2.png';
+// import decore from '../../images/decore.jpg';
+import tukData from "../../images/tukData.png";
 
 const ProjectContainer = styled.div`
     display: flex;
@@ -80,7 +81,7 @@ const Project = styled.div`
 
     :nth-child(1) {
         ${ProjectImage} {
-            background-image: url(${decore});
+            background-image: url(${tukData});
             background-size: cover;
             background-position-x: center;
             background-position-y: center;
@@ -89,7 +90,7 @@ const Project = styled.div`
 
     :nth-child(2) {
         ${ProjectImage} {
-            background-image: url(${CoffeeThumb});
+            background-image: url(${kejaAfrica2});
             background-size: cover;
             background-position-x: center;
             background-position-y: center;
@@ -105,7 +106,7 @@ const SubHeading = styled(Heading)`
 
 const ProjectParagraph = styled(Paragraph)`
     margin-top: 10px;
-    max-width: unset;
+    max-width: 80%;
     margin-bottom: 20px;
 
     @media (min-width: ${breakpoints.mobileMax}) {
@@ -117,39 +118,40 @@ function ProjectRow() {
     return (
         <ProjectContainer>
             <Project>
-                <Link title='Decore' to='/Decore'>
                     <ProjectImage />
-                </Link>
-                <Link title='Decore' to='/Decore'>
-                    <SubHeading>Decore</SubHeading>
-                </Link>
+                    <SubHeading>TU-K Data</SubHeading>
                 <ProjectParagraph>
-                    A web application that builds custom starter layouts for
-                    developers
+                    An API data source for weather data within The Technical University Of Kenya.
                 </ProjectParagraph>
-                <Link title='Decore' to='/Decore'>
-                    <ProjectLink>
-                        View Project<span>&#8250;</span>
-                    </ProjectLink>
-                </Link>
-            </Project>
-            <Project>
-                <Link title='Coffee Project' to='/Coffee'>
-                    <ProjectImage />
-                </Link>
-                <Link title='Coffee Project' to='/Coffee'>
-                    <SubHeading>Coffee By Benjamin</SubHeading>
-                </Link>
-                <ProjectParagraph>
-                    Developed a shopify e-commerce application with React for a
-                    coffee roasting company
-                </ProjectParagraph>
-
-                <Link title='Coffee Project' to='/Coffee'>
+                <a
+                    title='tukData'
+                    href='https://tukdataweb.netlify.com/'
+                    target='_blank'
+                    rel="noopener noreferrer"
+                    >
                     <ProjectLink>
                         View Project <span>&#8250;</span>
                     </ProjectLink>
-                </Link>
+                </a>
+            </Project>
+            <Project>
+                    <ProjectImage />
+                    <SubHeading>Keja.Africa</SubHeading>
+                <ProjectParagraph>
+                    I was part of a team that built a House Listing website that used an algorithm 
+                    to provide specialised house recommendations.
+                </ProjectParagraph>
+                <a
+                    title='keja.africa'
+                    href='https://keja.africa/'
+                    target='_blank'
+                    rel="noopener noreferrer"
+                >
+                    <ProjectLink>
+                        View Project <span>&#8250;</span>
+                    </ProjectLink>
+                </a>
+                    
             </Project>
         </ProjectContainer>
     );
