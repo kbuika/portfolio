@@ -16,26 +16,18 @@ const Layout = styled.div`
   }
 `;
 
-const Header = styled.div`
-  text-align: center;
-  flex: 1;
-  justify-content: center;
-`;
 
-const Text = styled.div`
-  margin-top: 10px;
-  font-size: 15px;
-`;
 
 const NotFoundPage = () => (
   <Layout>
-    <Header>Not Found</Header>
-    <Text>The page does not exist</Text>
-
-    <Link title='home' to='/'>
-      Home
-    </Link>
-
+    <h1 style={{fontWeight: 'bolder', fontSize: '30px'}}>Not Found</h1>
+    <p style={{fontSize: '18px'}}>The page does not exist</p>
+    <p style={{fontSize: '15px'}}>Go back
+      {' '}
+      <Link title='home' to='/'>
+          Home
+      </Link>
+    </p>
   </Layout>
 );
 
