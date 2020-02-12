@@ -262,7 +262,7 @@ class Page extends React.Component {
                             <MaxHeading>
                                Hey, I’m Steve Kibuika. <br />
                                 Front End Developer <br />
-                                and Student.
+                                and idealist.
                             </MaxHeading>
                             <br />
                             <HeadingElements>
@@ -298,8 +298,7 @@ class Page extends React.Component {
                     >
                         <TextContentWrap>
                             <Paragraph>
-                                I'm a student at The Technical University of Kenya
-                                currently studying Computer Technology.
+                                I am a passionate programmer with an eye for great user interfaces.
                                 <br />
                                 {/* <br />
                                 As a developer, I have worked for and with great developers who have 
