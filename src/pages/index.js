@@ -192,6 +192,43 @@ const SubParagraph = styled(Paragraph)`
     }
 `;
 
+const Circle1 = styled.div`
+    background: #f00;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    float: right;
+    margin-right: 15%;
+    margin-top: 5%
+`;
+
+const Circle2 = styled.div`
+    background: blue;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    float: right;
+    margin-right: 12%;
+    margin-top: 5px;
+    
+`;
+
+const Circle3 = styled.div`
+    background: green;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    float: right;
+    margin-right: 15%;
+    margin-top: 5%
+`;
+
 
 
 class Page extends React.Component {
@@ -204,8 +241,11 @@ class Page extends React.Component {
 
     render() {
         return (
-            <div>
-                <Layout>
+            <div >
+                    <Circle1/>
+                
+                    <Circle2/>
+                <Layout >
                     {/* <Link title='Home - Steve Kibuika' to='/'> */}
                         {/* <Logo /> */}
                        
@@ -256,14 +296,22 @@ class Page extends React.Component {
                         {/* <meta property='twitter:image' content={LandingImage} /> */}
                         <html lang='en' />
                     </Helmet>
-                    <Container style={{ marginTop: 80, marginBottom: 100 }}>
+                    
+                    <Container >
+                    
                         <HeadingWrap>
-                            
+                        
                             <MaxHeading>
                                Hey, I’m Steve Kibuika. <br />
                                 Front End Developer <br />
                                 and idealist.
+                                
+                                    
+                                    <Circle3/>
+                              
+                                
                             </MaxHeading>
+                            
                             <br />
                             <HeadingElements>
                                 <Line />
@@ -347,6 +395,9 @@ class Page extends React.Component {
                                     <row>
                                         <Paragraph>
                                             <span>&#9675;</span> Git
+                                        </Paragraph>
+                                        <Paragraph>
+                                            <span>&#9675;</span> NodeJS
                                         </Paragraph>
                                         
                                     </row>
