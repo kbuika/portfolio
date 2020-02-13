@@ -15,6 +15,8 @@ const Layout = styled.div`
   min-height: 100vh;
   color: black;
   opacity: 0;
+  margin-left: 1em;
+  margin-right: 1em;
   animation: ${FadeOut} 0.6s 0.3s ease-in-out forwards;
 
   a {

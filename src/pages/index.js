@@ -305,11 +305,6 @@ class Page extends React.Component {
                                Hey, I’m Steve Kibuika. <br />
                                 Front End Developer <br />
                                 and idealist.
-                                
-                                    
-                                    {/* <Circle3/> */}
-                              
-                                
                             </MaxHeading>
                             
                             <br />
