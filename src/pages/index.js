@@ -307,7 +307,7 @@ class Page extends React.Component {
                                 and idealist.
                                 
                                     
-                                    <Circle3/>
+                                    {/* <Circle3/> */}
                               
                                 
                             </MaxHeading>
