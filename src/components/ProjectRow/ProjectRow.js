@@ -138,8 +138,8 @@ function ProjectRow() {
                     <ProjectImage />
                     <SubHeading>Keja.Africa</SubHeading>
                 <ProjectParagraph>
-                    I was part of a team that built a House Listing website that used an algorithm 
-                    to provide specialised house recommendations.
+                    I am part of a team that is building a House Listing website that uses an algorithm 
+                    to provide specialised house recommendations for people in and around Nairobi.
                 </ProjectParagraph>
                 <a
                     title='keja.africa'

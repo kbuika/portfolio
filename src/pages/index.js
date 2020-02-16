@@ -336,7 +336,8 @@ class Page extends React.Component {
                         style={{
                             alignItems: 'start',
                             margin: 0,
-                            justifyContent: 'space-between'
+                            justifyContent: 'space-between',
+                            marginTop: '-10em'
                         }}
                     >
                         <TextContentWrap>
