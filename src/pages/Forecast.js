@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import { breakpoints } from "../components/Media";
-import Logo from "../components/Logo";
+// import Logo from "../components/Logo";
 import Heading from "../components/Heading";
 import Paragraph from "../components/Paragraph";
 import Footer from "../components/footer";
@@ -249,7 +249,7 @@ function Forecast(props) {
       </Helmet>
       <Layout>
         <Link to="/">
-          <Logo />
+          {/* <Logo /> */}
         </Link>
         <Container>
           <TextContent>

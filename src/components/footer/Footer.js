@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import styled from 'styled-components/macro';
 import Heading from '../Heading';
 import Paragraph from '../Paragraph';
-import Logo from '../Logo';
 import { breakpoints } from '../Media';
 import ContactEmail from '../ContactEmail';
 // import InstagramGrid from '../InstagramGrid';
@@ -126,10 +125,8 @@ function Footer(props) {
                         <ContactEmail />
                     </TextContent>
                 </SubContainer>
-                {/* <InstagramGrid instagramDisplay={props.instagramDisplay} /> */}
                 <Container>
                     <Link title='Home - Steve Kibuika' to='/'>
-                        {/* <Logo /> */}
                         <p>Steve Kibuika</p>
                     </Link>
                     <Social>

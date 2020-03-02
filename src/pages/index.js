@@ -4,22 +4,16 @@ import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
 import { breakpoints } from '../components/Media';
-// import Logo from '../components/Logo';
 import Heading from '../components/Heading';
 import Paragraph from '../components/Paragraph';
-// import ContactEmail from '../components/ContactEmail';
 import Footer from '../components/footer';
 import ProjectRow from '../components/ProjectRow';
-// import ProjectRow2 from '../components/ProjectRow2';
 import quotation from '../images/quotation.png';
-// import Loading from '../components/Loading';
-import insta from '../images/social/insta.png';
 import twitter from '../images/social/twitter.png';
 import git from '../images/social/git.png';
 import '../index.css';
 
 const HeadingWrap = styled.div`
-    background-image: url(${quotation});
     padding-top: 40px;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -49,9 +43,7 @@ const SocialCont = styled.div`
         background-image: url(${git});
     }
 
-    & .insta {
-        background-image: url(${insta});
-    }
+    
 
     & .twitter {
         background-image: url(${twitter});
@@ -217,17 +209,6 @@ const Circle2 = styled.div`
     
 `;
 
-const Circle3 = styled.div`
-    background: green;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    float: right;
-    margin-right: 15%;
-    margin-top: 5%
-`;
 
 
 
@@ -246,11 +227,7 @@ class Page extends React.Component {
                 
                     <Circle2/>
                 <Layout >
-                    {/* <Link title='Home - Steve Kibuika' to='/'> */}
-                        {/* <Logo /> */}
-                       
-                         {/* the logo here */}
-                    {/* </Link> */}
+                    
                     <Helmet>
                         <title>
                             Steve Kibuika | kibuikaCodes
@@ -293,7 +270,6 @@ class Page extends React.Component {
                             property='twitter:description'
                             content="I just code."
                         />
-                        {/* <meta property='twitter:image' content={LandingImage} /> */}
                         <html lang='en' />
                     </Helmet>
                     
@@ -303,8 +279,7 @@ class Page extends React.Component {
                         
                             <MaxHeading>
                                Hey, I’m Steve Kibuika. <br />
-                                Front End Developer <br />
-                                and idealist.
+                                and I build things for the web.
                             </MaxHeading>
                             
                             <br />
@@ -312,7 +287,7 @@ class Page extends React.Component {
                                 <Line />
                                 <SocialCont>
                                     <a
-                                        title='Github Repository'
+                                        title='Github'
                                         target='_blank'
                                         rel='noreferrer'
                                         href='https://github.com/kibuikaCodes'
@@ -331,7 +306,6 @@ class Page extends React.Component {
                             </HeadingElements>
                         </HeadingWrap>
                     </Container>
-                    {/* <HeadingImage /> */}
                     <Container
                         style={{
                             alignItems: 'start',
@@ -340,13 +314,11 @@ class Page extends React.Component {
                             marginTop: '-10em'
                         }}
                     >
-                        <TextContentWrap>
+                        {/* <TextContentWrap>
                             <Paragraph>
                                 I am a passionate programmer with an eye for great user interfaces.
                                 <br />
-                                {/* <br />
-                                As a developer, I have worked for and with great developers who have 
-                                taught me how to build great Web Applications. */}
+                                
                             </Paragraph>
                         </TextContentWrap>
                         <TextContentWrap>
@@ -354,7 +326,7 @@ class Page extends React.Component {
                             As a developer, I have worked for and with great developers who have 
                                 taught me how to build great Web Applications.
                             </Paragraph>
-                        </TextContentWrap>
+                        </TextContentWrap> */}
                     </Container>
                     <Container>
                         <SubContainer>
@@ -379,15 +351,7 @@ class Page extends React.Component {
                                             <span>&#9675;</span> React
                                         </Paragraph>
                                     </row>
-                                    {/* <row>
-                                        <Paragraph>
-                                            <span>&#9675;</span> React Native
-                                        </Paragraph>
-                                        <Paragraph>
-                                            <span>&#9675;</span>{' '}
-                                            Styled-Components
-                                        </Paragraph>
-                                    </row> */}
+                                    
                                     <row>
                                         <Paragraph>
                                             <span>&#9675;</span> Git
@@ -412,9 +376,6 @@ class Page extends React.Component {
                     <SubContainer>
                         <ProjectRow />
                     </SubContainer>
-                    {/* <SubContainer style={{ marginBottom: 75 }}>
-                        <ProjectRow2 />
-                    </SubContainer> */}
                 </Layout>
                 <Footer instagramDisplay='flex' />
             </div>
