@@ -8,10 +8,10 @@ import Heading from '../components/Heading';
 import Paragraph from '../components/Paragraph';
 import Footer from '../components/footer';
 import ProjectRow from '../components/ProjectRow';
-import quotation from '../images/quotation.png';
 import twitter from '../images/social/twitter.png';
 import git from '../images/social/git.png';
 import '../index.css';
+import Fade from 'react-reveal/fade';
 
 const HeadingWrap = styled.div`
     padding-top: 40px;
@@ -22,6 +22,7 @@ const HeadingWrap = styled.div`
 const HeadingElements = styled.div`
     display: flex;
     align-items: center;
+    margin-top: 2em;
 `;
 const Line = styled.div`
     height: 2px;
@@ -276,14 +277,14 @@ class Page extends React.Component {
                     <Container >
                     
                         <HeadingWrap>
-                        
-                            <MaxHeading>
+                        <Fade left>
+                            <MaxHeading >
                                Hey, I’m Steve Kibuika. <br />
                                 and I build things for the web.
                             </MaxHeading>
-                            
-                            <br />
-                            <HeadingElements>
+                        </Fade>   
+                            <Fade bottom>
+                            <HeadingElements >
                                 <Line />
                                 <SocialCont>
                                     <a
@@ -304,6 +305,7 @@ class Page extends React.Component {
                                     </a>
                                 </SocialCont>
                             </HeadingElements>
+                            </Fade>
                         </HeadingWrap>
                     </Container>
                     <Container
@@ -336,30 +338,41 @@ class Page extends React.Component {
                                 </TextContent>
                                 <SkillTable>
                                     <row>
+                                        <Fade clear>
                                         <Paragraph>
                                             <span>&#9675;</span> HTML5
                                         </Paragraph>
+                                        </Fade>
+                                        <Fade clear>
                                         <Paragraph>
                                             <span>&#9675;</span> CSS3
                                         </Paragraph>
+                                        </Fade>
                                     </row>
                                     <row>
+                                        <Fade clear>
                                         <Paragraph>
                                             <span>&#9675;</span> Javascript ES6
                                         </Paragraph>
+                                        </Fade>
+                                        <Fade clear>
                                         <Paragraph>
                                             <span>&#9675;</span> React
                                         </Paragraph>
+                                        </Fade>
                                     </row>
                                     
                                     <row>
+                                        <Fade clear>
                                         <Paragraph>
                                             <span>&#9675;</span> Git
                                         </Paragraph>
+                                        </Fade>
+                                        <Fade clear>
                                         <Paragraph>
                                             <span>&#9675;</span> NodeJS
                                         </Paragraph>
-                                        
+                                        </Fade>
                                     </row>
                                 </SkillTable>
                             </SkillContent>
