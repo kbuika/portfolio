@@ -379,15 +379,19 @@ class Page extends React.Component {
                         </SubContainer>
                     </Container>
                     <SubContainer>
+                        <Fade right>
                         <TextContent>
                             <Heading>Projects I've worked on </Heading>
                             <SubParagraph>
                                 With my skills I have worked on a couple of projects, some individually and others in a team. Have a look.
                             </SubParagraph>
                         </TextContent>
+                        </Fade>
                     </SubContainer>
                     <SubContainer>
+                        <Fade clear>
                         <ProjectRow />
+                        </Fade>
                     </SubContainer>
                 </Layout>
                 <Footer instagramDisplay='flex' />

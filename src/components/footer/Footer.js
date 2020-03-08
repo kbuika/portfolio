@@ -7,6 +7,8 @@ import { breakpoints } from '../Media';
 import ContactEmail from '../ContactEmail';
 // import InstagramGrid from '../InstagramGrid';
 import ProjectRow from '../ProjectRow';
+import Fade from 'react-reveal/fade';
+
 
 const FooterCont = styled.div`
     width: 100%;
@@ -116,12 +118,15 @@ function Footer(props) {
                     </SubContainer>
                 </Variable>
                 <SubContainer>
+                    
                     <TextContent>
+                        <Fade top>
                         <Heading>You have a project in mind?</Heading>
                         <SubParagraph>
                             Feel free to reach out if you're looking for a
                             developer, have a question, or just want to connect.
                         </SubParagraph>
+                        </Fade>
                         <ContactEmail />
                     </TextContent>
                 </SubContainer>
