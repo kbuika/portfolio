@@ -223,7 +223,7 @@ class Page extends React.Component {
 
     render() {
         return (
-            <div >
+            <div>
                     <Circle1/>
                 
                     <Circle2/>
@@ -365,12 +365,17 @@ class Page extends React.Component {
                                     <row>
                                         <Fade clear>
                                         <Paragraph>
-                                            <span>&#9675;</span> Git
+                                            <span>&#9675;</span> Styled-components
                                         </Paragraph>
                                         </Fade>
                                         <Fade clear>
                                         <Paragraph>
                                             <span>&#9675;</span> NodeJS
+                                        </Paragraph>
+                                        </Fade>
+                                        <Fade clear>
+                                        <Paragraph>
+                                            <span>&#9675;</span> AdobeXD
                                         </Paragraph>
                                         </Fade>
                                     </row>

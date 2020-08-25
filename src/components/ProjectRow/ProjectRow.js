@@ -3,9 +3,10 @@ import styled from 'styled-components';
 import { breakpoints } from '../Media';
 import Heading from '../Heading';
 import Paragraph from '../Paragraph';
-import kejaAfrica2 from '../../images/kejaAfrica2.png';
+// import kejaAfrica2 from '../../images/kejaAfrica2.png';
 // import decore from '../../images/decore.jpg';
 import tukData from "../../images/tukData.png";
+import hackerNews from "../../images/hacker-news.jpg";
 
 const ProjectContainer = styled.div`
     display: flex;
@@ -89,7 +90,7 @@ const Project = styled.div`
 
     :nth-child(2) {
         ${ProjectImage} {
-            background-image: url(${kejaAfrica2});
+            background-image: url(${hackerNews});
             background-size: cover;
             background-position-x: center;
             background-position-y: center;
@@ -135,14 +136,13 @@ function ProjectRow() {
             </Project>
             <Project>
                     <ProjectImage />
-                    <SubHeading>Keja.Africa</SubHeading>
+                    <SubHeading>Hacker News Website</SubHeading>
                 <ProjectParagraph>
-                    I am part of a team that is building a House Listing website that uses an algorithm 
-                    to provide specialised house recommendations for people in and around Nairobi.
+                    A website that uses the hacker-news API to display tech articles in the hacker news database.
                 </ProjectParagraph>
                 <a
-                    title='keja.africa'
-                    href='https://keja.africa/'
+                    title='Hacker News'
+                    href='https://hacker-news-kibuika.netlify.app/'
                     target='_blank'
                     rel="noopener noreferrer"
                 >

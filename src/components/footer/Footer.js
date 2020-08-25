@@ -121,7 +121,7 @@ function Footer(props) {
                     
                     <TextContent>
                         <Fade top>
-                        <Heading>You have a project in mind?</Heading>
+                        <Heading>Let's work together.</Heading>
                         <SubParagraph>
                             Feel free to reach out if you're looking for a
                             developer, have a question, or just want to connect.
