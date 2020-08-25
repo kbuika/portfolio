@@ -11,7 +11,6 @@ import ProjectRow from '../components/ProjectRow';
 import twitter from '../images/social/twitter.png';
 import git from '../images/social/git.png';
 import '../index.css';
-import Fade from 'react-reveal/fade';
 
 const HeadingWrap = styled.div`
     padding-top: 40px;
@@ -277,13 +276,10 @@ class Page extends React.Component {
                     <Container >
                     
                         <HeadingWrap>
-                        <Fade left>
                             <MaxHeading >
                                Hey, I’m Steve Kibuika. <br />
                                 and I build things for the web.
                             </MaxHeading>
-                        </Fade>   
-                            <Fade bottom>
                             <HeadingElements >
                                 <Line />
                                 <SocialCont>
@@ -305,7 +301,6 @@ class Page extends React.Component {
                                     </a>
                                 </SocialCont>
                             </HeadingElements>
-                            </Fade>
                         </HeadingWrap>
                     </Container>
                     <Container
@@ -338,65 +333,47 @@ class Page extends React.Component {
                                 </TextContent>
                                 <SkillTable>
                                     <row>
-                                        <Fade clear>
                                         <Paragraph>
                                             <span>&#9675;</span> HTML5
                                         </Paragraph>
-                                        </Fade>
-                                        <Fade clear>
                                         <Paragraph>
                                             <span>&#9675;</span> CSS3
                                         </Paragraph>
-                                        </Fade>
                                     </row>
                                     <row>
-                                        <Fade clear>
                                         <Paragraph>
                                             <span>&#9675;</span> Javascript ES6
                                         </Paragraph>
-                                        </Fade>
-                                        <Fade clear>
                                         <Paragraph>
                                             <span>&#9675;</span> React
                                         </Paragraph>
-                                        </Fade>
                                     </row>
                                     
                                     <row>
-                                        <Fade clear>
                                         <Paragraph>
                                             <span>&#9675;</span> Styled-components
                                         </Paragraph>
-                                        </Fade>
-                                        <Fade clear>
                                         <Paragraph>
                                             <span>&#9675;</span> NodeJS
                                         </Paragraph>
-                                        </Fade>
-                                        <Fade clear>
                                         <Paragraph>
                                             <span>&#9675;</span> AdobeXD
                                         </Paragraph>
-                                        </Fade>
                                     </row>
                                 </SkillTable>
                             </SkillContent>
                         </SubContainer>
                     </Container>
                     <SubContainer>
-                        <Fade right>
                         <TextContent>
                             <Heading>Projects I've worked on </Heading>
                             <SubParagraph>
                                 With my skills I have worked on a couple of projects, some individually and others in a team. Have a look.
                             </SubParagraph>
                         </TextContent>
-                        </Fade>
                     </SubContainer>
                     <SubContainer>
-                        <Fade clear>
                         <ProjectRow />
-                        </Fade>
                     </SubContainer>
                 </Layout>
                 <Footer instagramDisplay='flex' />
