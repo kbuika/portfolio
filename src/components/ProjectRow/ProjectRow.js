@@ -11,9 +11,11 @@ import netflixClone from "../../images/netflix-clone.png";
 
 const ProjectContainer = styled.div`
   display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
   width: 100%;
   margin-bottom: 0px;
-  flex-wrap: wrap;
   margin-top: 0px;
   height: unset;
   @media (min-width: ${breakpoints.mobileMax}) {
@@ -56,10 +58,12 @@ const Project = styled.div`
   height: 450px;
   margin-bottom: 90px;
   transition-duration: 0.3s;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 
   :hover {
     ${ProjectImage} {
-      transform: scale(1.03);
+      transform: scale(1.01);
     }
 
     ${ProjectLink} {
@@ -71,7 +75,7 @@ const Project = styled.div`
     margin-right: 0;
 
     @media (min-width: ${breakpoints.mobileMax}) {
-      margin-right: 10%;
+      margin-right: 0;
     }
   }
 
@@ -86,6 +90,7 @@ const Project = styled.div`
       background-size: cover;
       background-position-x: center;
       background-position-y: center;
+      background-repeat: none;
     }
   }
 
@@ -95,6 +100,7 @@ const Project = styled.div`
       background-size: cover;
       background-position-x: center;
       background-position-y: center;
+      background-repeat: none;
     }
   }
 
