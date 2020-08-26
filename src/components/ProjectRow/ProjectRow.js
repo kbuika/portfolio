@@ -6,7 +6,7 @@ import Paragraph from '../Paragraph';
 // import kejaAfrica2 from '../../images/kejaAfrica2.png';
 // import decore from '../../images/decore.jpg';
 import tukData from "../../images/tukData.png";
-import hackerNews from "../../images/hacker-news.JPG";
+import hackerNews from "../../images/hacker-news.png";
 
 const ProjectContainer = styled.div`
     display: flex;
