@@ -11,18 +11,21 @@ import netflixClone from "../../images/netflix-clone.png";
 
 const ProjectContainer = styled.div`
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
   margin-bottom: 0px;
   margin-top: 0px;
-  height: unset;
+  height: auto;
   @media (min-width: ${breakpoints.mobileMax}) {
-    flex-wrap: nowrap;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 70px;
-    margin-top: 40px;
-    height: 500px;
+    margin-top: 10px;
+    height: auto;
   }
 `;
 
@@ -56,7 +59,7 @@ const ProjectImage = styled.div`
 const Project = styled.div`
   width: 100%;
   height: 450px;
-  margin-bottom: 90px;
+
   transition-duration: 0.3s;
   margin-left: 0.5em;
   margin-right: 0.5em;
@@ -85,6 +88,7 @@ const Project = styled.div`
   }
 
   :nth-child(1) {
+    margin-top: 90px;
     ${ProjectImage} {
       background-image: url(${tukData});
       background-size: cover;
@@ -95,6 +99,7 @@ const Project = styled.div`
   }
 
   :nth-child(2) {
+    margin-top: 90px;
     ${ProjectImage} {
       background-image: url(${hackerNews});
       background-size: cover;
@@ -105,6 +110,7 @@ const Project = styled.div`
   }
 
   :nth-child(3) {
+    margin-top: 90px;
     ${ProjectImage} {
       background-image: url(${netflixClone});
       background-size: cover;
@@ -117,7 +123,7 @@ const Project = styled.div`
 const SubHeading = styled(Heading)`
   font-size: 30px;
   margin-bottom: 0;
-  margin-top: 30px;
+  margin-top: 10px;
 `;
 
 const ProjectParagraph = styled(Paragraph)`
@@ -153,7 +159,7 @@ function ProjectRow() {
       </Project>
       <Project>
         <ProjectImage />
-        <SubHeading>Hacker News Website</SubHeading>
+        <SubHeading>Hacker News</SubHeading>
         <ProjectParagraph>
           A website that uses the hacker-news API to display tech articles in
           the hacker news database.
