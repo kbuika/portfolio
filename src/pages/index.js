@@ -229,7 +229,7 @@ class Page extends React.Component {
             <meta property="og:type" content="website" />
             <meta
               property="og:url"
-              // content='https://juliacodes.com/'
+              // content=''
             />
             <meta
               property="og:title"
@@ -238,10 +238,7 @@ class Page extends React.Component {
             <meta property="og:description" content="I just code." />
             {/* <meta property='og:image' content={LandingImage} /> */}
             <meta property="twitter:card" content="summary_large_image" />
-            <meta
-              property="twitter:url"
-              // content='https://juliacodes.com/'
-            />
+            <meta property="twitter:url" />
             <meta
               property="twitter:title"
               content="Steve Kibuika | kibuikaCodes | Front-End Developer"
@@ -332,8 +329,13 @@ class Page extends React.Component {
                     <Paragraph>
                       <span>&#9675;</span> NodeJS
                     </Paragraph>
+                  </row>
+                  <row>
                     <Paragraph>
-                      <span>&#9675;</span> AdobeXD
+                      <span>&#9675;</span> React-Redux
+                    </Paragraph>
+                    <Paragraph>
+                      <span>&#9675;</span> Git
                     </Paragraph>
                   </row>
                 </SkillTable>
