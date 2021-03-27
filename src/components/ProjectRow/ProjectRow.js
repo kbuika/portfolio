@@ -8,6 +8,8 @@ import Paragraph from "../Paragraph";
 import tukData from "../../images/tukData.png";
 import hackerNews from "../../images/hacker-news.png";
 import netflixClone from "../../images/netflix-clone.png";
+import tusomeni from "../../images/tusomeni.png";
+import hairq from "../../images/hairq.png";
 
 const ProjectContainer = styled.div`
   display: flex;
@@ -90,6 +92,28 @@ const Project = styled.div`
   :nth-child(1) {
     margin-top: 90px;
     ${ProjectImage} {
+      background-image: url(${tusomeni});
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: none;
+    }
+  }
+
+  :nth-child(3) {
+    margin-top: 90px;
+    ${ProjectImage} {
+      background-image: url(${hairq});
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: none;
+    }
+  }
+
+  :nth-child(3) {
+    margin-top: 90px;
+    ${ProjectImage} {
       background-image: url(${tukData});
       background-size: cover;
       background-position-x: center;
@@ -98,7 +122,7 @@ const Project = styled.div`
     }
   }
 
-  :nth-child(2) {
+  :nth-child(4) {
     margin-top: 90px;
     ${ProjectImage} {
       background-image: url(${hackerNews});
@@ -109,7 +133,7 @@ const Project = styled.div`
     }
   }
 
-  :nth-child(3) {
+  :nth-child(5) {
     margin-top: 90px;
     ${ProjectImage} {
       background-image: url(${netflixClone});
@@ -139,6 +163,41 @@ const ProjectParagraph = styled(Paragraph)`
 function ProjectRow() {
   return (
     <ProjectContainer>
+      <Project>
+        <ProjectImage />
+        <SubHeading>Tusomeni</SubHeading>
+        <ProjectParagraph>
+          This is an online learning resource platform for computer science
+          classes at The Technical University of Kenya. The platform receives an
+          average of 50 daily users. The next features the team and I are
+          introducing is Sessions, these will be code sessions and talk sessions
+          to disperse relevant programming knowledge to interested students.
+        </ProjectParagraph>
+        <a
+          title="Tusomeni"
+          href="https://tusomeni.netlify.com/"
+          target="_blank"
+          rel="noopener"
+        >
+          <ProjectLink>
+            View Project <span>&#8250;</span>
+          </ProjectLink>
+        </a>
+      </Project>
+      <Project>
+        <ProjectImage />
+        <SubHeading>HairQ</SubHeading>
+        <ProjectParagraph>
+          A web application to enable users to book salon services in London.
+          This is a project for a client ventures in the service industry. The
+          project includes an admin dashboard for service providers.
+        </ProjectParagraph>
+        <a title="tukData" href="/" rel="noopener">
+          <ProjectLink>
+            Still under development<span>&#8250;</span>
+          </ProjectLink>
+        </a>
+      </Project>
       <Project>
         <ProjectImage />
         <SubHeading>TU-K Data</SubHeading>
