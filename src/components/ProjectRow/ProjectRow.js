@@ -112,7 +112,7 @@ const Project = styled.div`
   }
 
   :nth-child(3) {
-    margin-top: 210px;
+    margin-top: 230px;
     ${ProjectImage} {
       background-image: url(${tukData});
       background-size: cover;
