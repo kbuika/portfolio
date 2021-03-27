@@ -100,7 +100,7 @@ const Project = styled.div`
     }
   }
 
-  :nth-child(3) {
+  :nth-child(2) {
     margin-top: 90px;
     ${ProjectImage} {
       background-image: url(${hairq});
@@ -112,7 +112,7 @@ const Project = styled.div`
   }
 
   :nth-child(3) {
-    margin-top: 90px;
+    margin-top: 140px;
     ${ProjectImage} {
       background-image: url(${tukData});
       background-size: cover;
