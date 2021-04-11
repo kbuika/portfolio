@@ -170,7 +170,7 @@ function ProjectRow() {
         <ProjectParagraph>
           This is an online learning resource platform for computer science
           classes at The Technical University of Kenya. The platform receives an
-          average of 50 daily users. The next features the team and I are
+          average of 300 MAUs. The next features the team and I are
           introducing is Sessions, these will be code sessions and talk sessions
           to disperse relevant programming knowledge to interested students.
         </ProjectParagraph>
