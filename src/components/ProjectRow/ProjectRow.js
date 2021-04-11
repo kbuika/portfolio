@@ -78,7 +78,7 @@ const Project = styled.div`
 
   :nth-child(1) {
     margin-right: 0;
-    height: 600px;
+    height: 650px;
 
     @media (min-width: ${breakpoints.mobileMax}) {
       margin-right: 0;
