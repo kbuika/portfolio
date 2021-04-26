@@ -10,6 +10,8 @@ import hackerNews from "../../images/hacker-news.png";
 import netflixClone from "../../images/netflix-clone.png";
 import tusomeni from "../../images/tusomeni.png";
 import hairq from "../../images/hairq.png";
+import residelly from "../../images/residelly.png";
+import shobill from "../../images/shobill.png";
 
 const ProjectContainer = styled.div`
   display: flex;
@@ -92,6 +94,7 @@ const Project = styled.div`
 
   :nth-child(1) {
     margin-top: 50px;
+    margin-bottom: 300px;
     ${ProjectImage} {
       background-image: url(${tusomeni});
       background-size: cover;
@@ -103,6 +106,7 @@ const Project = styled.div`
 
   :nth-child(2) {
     margin-top: 50px;
+    margin-bottom: 90px;
     ${ProjectImage} {
       background-image: url(${hairq});
       background-size: cover;
@@ -113,9 +117,9 @@ const Project = styled.div`
   }
 
   :nth-child(3) {
-    margin-top: 230px;
+    margin-top: 90px;
     ${ProjectImage} {
-      background-image: url(${tukData});
+      background-image: url(${shobill});
       background-size: cover;
       background-position-x: center;
       background-position-y: center;
@@ -126,7 +130,7 @@ const Project = styled.div`
   :nth-child(4) {
     margin-top: 100px;
     ${ProjectImage} {
-      background-image: url(${hackerNews});
+      background-image: url(${residelly});
       background-size: cover;
       background-position-x: center;
       background-position-y: center;
@@ -135,6 +139,28 @@ const Project = styled.div`
   }
 
   :nth-child(5) {
+    margin-top: 100px;
+    ${ProjectImage} {
+      background-image: url(${tukData});
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: none;
+    }
+  }
+
+  :nth-child(6) {
+    margin-top: 100px;
+    ${ProjectImage} {
+      background-image: url(${hackerNews});
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: none;
+    }
+  }
+
+  :nth-child(7) {
     margin-top: 90px;
     ${ProjectImage} {
       background-image: url(${netflixClone});
@@ -178,7 +204,7 @@ function ProjectRow() {
           title="Tusomeni"
           href="https://tusomeni.netlify.com/"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           <ProjectLink>
             View Project <span>&#8250;</span>
@@ -193,9 +219,39 @@ function ProjectRow() {
           This is a project for a client ventures in the service industry. The
           project includes an admin dashboard for service providers.
         </ProjectParagraph>
-        <a title="tukData" href="/" rel="noopener">
+        <a title="tukData" href="/" rel="noreferrer">
           <ProjectLink>
             Still under development<span>&#8250;</span>
+          </ProjectLink>
+        </a>
+      </Project>
+      <Project>
+        <ProjectImage />
+        <SubHeading>Shobill: Art Website</SubHeading>
+        <ProjectParagraph>
+          Shobill is a platform that sell contemporary African art. This
+          platform was built using shopify.
+        </ProjectParagraph>
+        <a title="shobill" href="https://shobill.com" rel="noreferrer">
+          <ProjectLink>
+            View Project<span>&#8250;</span>
+          </ProjectLink>
+        </a>
+      </Project>
+      <Project>
+        <ProjectImage />
+        <SubHeading>Residelly Page Mock</SubHeading>
+        <ProjectParagraph>
+          This is a landing page that I built from figma designs. The build was
+          for an evaluation challenge. I built this page in 9 hours.
+        </ProjectParagraph>
+        <a
+          title="residelly"
+          href="https://residelly-challenge.netlify.app"
+          rel="noreferrer"
+        >
+          <ProjectLink>
+            View Project<span>&#8250;</span>
           </ProjectLink>
         </a>
       </Project>
@@ -210,7 +266,7 @@ function ProjectRow() {
           title="tukData"
           href="https://tukdataweb.netlify.com/"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           <ProjectLink>
             View Project <span>&#8250;</span>
@@ -228,7 +284,7 @@ function ProjectRow() {
           title="Hacker News"
           href="https://hacker-news-kibuika.netlify.app/"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           <ProjectLink>
             View Project <span>&#8250;</span>
@@ -247,7 +303,7 @@ function ProjectRow() {
           title="Netflix Clone (Front-End)"
           href="https://kibuika-netflix-clone.netlify.app/"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           <ProjectLink>
             View Project <span>&#8250;</span>

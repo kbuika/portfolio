@@ -206,12 +206,6 @@ const Circle2 = styled.div`
 `;
 
 class Page extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount() {}
-
   render() {
     return (
       <div>
