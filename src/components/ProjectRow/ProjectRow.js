@@ -116,7 +116,7 @@ const Project = styled.div`
   }
 
   :nth-child(3) {
-    margin-top: 90px;
+    margin-top: 40px;
     ${ProjectImage} {
       background-image: url(${shobill});
       background-size: cover;
@@ -127,7 +127,7 @@ const Project = styled.div`
   }
 
   :nth-child(4) {
-    margin-top: 100px;
+    margin-top: 40px;
     ${ProjectImage} {
       background-image: url(${residelly});
       background-size: cover;
