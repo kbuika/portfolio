@@ -12,12 +12,15 @@ import tusomeni from "../../images/tusomeni.png";
 import hairq from "../../images/hairq.png";
 import residelly from "../../images/residelly.png";
 import shobill from "../../images/shobill.png";
+import hanshen from "../../images/hanshen.png";
+import codematata from "../../images/codematata.png";
+import lennyarts from "../../images/lennyarts.png";
 
 const ProjectContainer = styled.div`
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100%;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -26,9 +29,7 @@ const ProjectContainer = styled.div`
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 70px;
-    margin-top: 10px;
+    justify-content: space-around;
     height: auto;
   }
 `;
@@ -62,7 +63,8 @@ const ProjectImage = styled.div`
 
 const Project = styled.div`
   width: 100%;
-  height: 450px;
+  height: auto;
+  margin: 3em 0em 3em 0em;
 
   transition-duration: 0.3s;
   margin-left: 0.5em;
@@ -93,8 +95,36 @@ const Project = styled.div`
   }
 
   :nth-child(1) {
-    margin-top: 50px;
-    margin-bottom: 300px;
+    ${ProjectImage} {
+      background-image: url(${lennyarts});
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: none;
+    }
+  }
+
+  :nth-child(2) {
+    ${ProjectImage} {
+      background-image: url(${codematata});
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: none;
+    }
+  }
+
+  :nth-child(3) {
+    ${ProjectImage} {
+      background-image: url(${hanshen});
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: none;
+    }
+  }
+
+  :nth-child(4) {
     ${ProjectImage} {
       background-image: url(${tusomeni});
       background-size: cover;
@@ -104,9 +134,7 @@ const Project = styled.div`
     }
   }
 
-  :nth-child(2) {
-    margin-top: 50px;
-    margin-bottom: 90px;
+  :nth-child(5) {
     ${ProjectImage} {
       background-image: url(${hairq});
       background-size: cover;
@@ -116,8 +144,7 @@ const Project = styled.div`
     }
   }
 
-  :nth-child(3) {
-    margin-top: 40px;
+  :nth-child(6) {
     ${ProjectImage} {
       background-image: url(${shobill});
       background-size: cover;
@@ -127,8 +154,7 @@ const Project = styled.div`
     }
   }
 
-  :nth-child(4) {
-    margin-top: 40px;
+  :nth-child(7) {
     ${ProjectImage} {
       background-image: url(${residelly});
       background-size: cover;
@@ -138,8 +164,7 @@ const Project = styled.div`
     }
   }
 
-  :nth-child(5) {
-    margin-top: 100px;
+  :nth-child(8) {
     ${ProjectImage} {
       background-image: url(${tukData});
       background-size: cover;
@@ -149,8 +174,7 @@ const Project = styled.div`
     }
   }
 
-  :nth-child(6) {
-    margin-top: 100px;
+  :nth-child(9) {
     ${ProjectImage} {
       background-image: url(${hackerNews});
       background-size: cover;
@@ -160,8 +184,7 @@ const Project = styled.div`
     }
   }
 
-  :nth-child(7) {
-    margin-top: 90px;
+  :nth-child(10) {
     ${ProjectImage} {
       background-image: url(${netflixClone});
       background-size: cover;
@@ -192,13 +215,64 @@ function ProjectRow() {
     <ProjectContainer>
       <Project>
         <ProjectImage />
+        <SubHeading>LennyArts Website</SubHeading>
+        <ProjectParagraph>
+          This is a portfolio website for LennyArts, a creative design agency.
+          Built using Reactjs and Styled-components. Uses an external mail
+          server to send emails.
+        </ProjectParagraph>
+        <a
+          title="Lennyarts"
+          href="https://lennyarts.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <ProjectLink>
+            View Project <span>&#8250;</span>
+          </ProjectLink>
+        </a>
+      </Project>
+      <Project>
+        <ProjectImage />
+        <SubHeading>CodeMatata</SubHeading>
+        <ProjectParagraph>
+          CodeMatata is a project to help teach others how to get started in
+          code. The website is to help keep track of the upcoming events and the
+          past recorded events. Built using Reactjs, styled-components, Oauth,
+          also with a Spring-Boot backend.
+        </ProjectParagraph>
+        <a
+          title="Codematata"
+          href="https://codematata.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <ProjectLink>
+            View Project <span>&#8250;</span>
+          </ProjectLink>
+        </a>
+      </Project>
+      <Project>
+        <ProjectImage />
+        <SubHeading>Hanshen</SubHeading>
+        <ProjectParagraph>
+          Website built for a consulting firm in Nairobi.
+        </ProjectParagraph>
+        <a title="Hanshen" href="/" target="_blank" rel="noreferrer">
+          <ProjectLink>
+            Under Development <span>&#8250;</span>
+          </ProjectLink>
+        </a>
+      </Project>
+      <Project>
+        <ProjectImage />
         <SubHeading>Tusomeni</SubHeading>
         <ProjectParagraph>
           This is an online learning resource platform for computer science
           classes at The Technical University of Kenya. The platform receives an
-          average of 300 MAUs. The next features the team and I are
-          introducing is Sessions, these will be code sessions and talk sessions
-          to disperse relevant programming knowledge to interested students.
+          average of 300 MAUs. The next features the team and I are introducing
+          is Sessions, these will be code sessions and talk sessions to disperse
+          relevant programming knowledge to interested students.
         </ProjectParagraph>
         <a
           title="Tusomeni"
@@ -219,9 +293,14 @@ function ProjectRow() {
           This is a project for a client ventures in the service industry. The
           project includes an admin dashboard for service providers.
         </ProjectParagraph>
-        <a title="tukData" href="/" rel="noreferrer">
+        <a
+          title="HairQ"
+          href="https://hairq.netlify.app"
+          target="_blank"
+          rel="noreferrer"
+        >
           <ProjectLink>
-            Still under development<span>&#8250;</span>
+            View Project <span>&#8250;</span>
           </ProjectLink>
         </a>
       </Project>

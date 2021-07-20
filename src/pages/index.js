@@ -326,7 +326,7 @@ class Page extends React.Component {
                   </row>
                   <row>
                     <Paragraph>
-                      <span>&#9675;</span> React-Redux
+                      <span>&#9675;</span> Redux
                     </Paragraph>
                     <Paragraph>
                       <span>&#9675;</span> Git
