@@ -45,6 +45,10 @@ const SocialCont = styled.div`
   }
 
   & .twitter {
+    background-image: url(${twitter});
+  }
+
+  & .linked {
     background-image: url(${linked});
   }
 `;
@@ -263,18 +267,18 @@ class Page extends React.Component {
                     title="Twitter"
                     target="_blank"
                     rel="noreferrer"
-                    href="https://www.linkedin.com/in/steve-kibuika/"
+                    href="https://twitter.com/kibuikaCodes"
                   >
                     <Social className="twitter"></Social>
                   </a>
-                  {/* <a
+                  <a
                     title="LinkedIn"
                     target="_blank"
                     rel="noreferrer"
                     href="https://www.linkedin.com/in/steve-kibuika/"
                   >
                     <Social className="linked"></Social>
-                  </a> */}
+                  </a>
                 </SocialCont>
               </HeadingElements>
             </HeadingWrap>
