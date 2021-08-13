@@ -10,6 +10,7 @@ import Footer from "../components/footer";
 import ProjectRow from "../components/ProjectRow";
 import twitter from "../images/social/twitter.png";
 import git from "../images/social/git.png";
+import linked from "../images/social/linkedin.png";
 import "../index.css";
 
 const HeadingWrap = styled.div`
@@ -44,7 +45,7 @@ const SocialCont = styled.div`
   }
 
   & .twitter {
-    background-image: url(${twitter});
+    background-image: url(${linked});
   }
 `;
 const Social = styled.div`
@@ -262,10 +263,18 @@ class Page extends React.Component {
                     title="Twitter"
                     target="_blank"
                     rel="noreferrer"
-                    href="https://twitter.com/kibuikaCodes"
+                    href="https://www.linkedin.com/in/steve-kibuika/"
                   >
                     <Social className="twitter"></Social>
                   </a>
+                  {/* <a
+                    title="LinkedIn"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.linkedin.com/in/steve-kibuika/"
+                  >
+                    <Social className="linked"></Social>
+                  </a> */}
                 </SocialCont>
               </HeadingElements>
             </HeadingWrap>
