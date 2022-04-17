@@ -334,7 +334,7 @@ class Page extends React.Component {
                       <span>&#9675;</span> Styled-components
                     </Paragraph>
                     <Paragraph>
-                      <span>&#9675;</span> NodeJS
+                      <span>&#9675;</span> Git
                     </Paragraph>
                   </row>
                   <row>
@@ -342,7 +342,15 @@ class Page extends React.Component {
                       <span>&#9675;</span> Redux
                     </Paragraph>
                     <Paragraph>
-                      <span>&#9675;</span> Git
+                      <span>&#9675;</span> NodeJS
+                    </Paragraph>
+                  </row>
+                  <row>
+                    <Paragraph>
+                      <span>&#9675;</span> AWS - Lambda, S3, Cognito
+                    </Paragraph>
+                    <Paragraph>
+                      <span>&#9675;</span> MobX
                     </Paragraph>
                   </row>
                 </SkillTable>
