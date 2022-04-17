@@ -11,10 +11,12 @@ import netflixClone from "../../images/netflix-clone.png";
 import tusomeni from "../../images/tusomeni.png";
 import hairq from "../../images/hairq.png";
 import residelly from "../../images/residelly.png";
-import shobill from "../../images/shobill.png";
-import hanshen from "../../images/hanshen.png";
+// import shobill from "../../images/shobill.png";
+// import hanshen from "../../images/hanshen.png";
 import codematata from "../../images/codematata.png";
 import lennyarts from "../../images/lennyarts.png";
+import fx from "../../images/fx.png";
+import dedupe from "../../images/dedupe.png";
 
 const ProjectContainer = styled.div`
   display: flex;
@@ -96,7 +98,7 @@ const Project = styled.div`
 
   :nth-child(1) {
     ${ProjectImage} {
-      background-image: url(${lennyarts});
+      background-image: url(${fx});
       background-size: cover;
       background-position-x: center;
       background-position-y: center;
@@ -106,7 +108,7 @@ const Project = styled.div`
 
   :nth-child(2) {
     ${ProjectImage} {
-      background-image: url(${codematata});
+      background-image: url(${dedupe});
       background-size: cover;
       background-position-x: center;
       background-position-y: center;
@@ -116,7 +118,7 @@ const Project = styled.div`
 
   :nth-child(3) {
     ${ProjectImage} {
-      background-image: url(${hanshen});
+      background-image: url(${lennyarts});
       background-size: cover;
       background-position-x: center;
       background-position-y: center;
@@ -126,7 +128,7 @@ const Project = styled.div`
 
   :nth-child(4) {
     ${ProjectImage} {
-      background-image: url(${tusomeni});
+      background-image: url(${codematata});
       background-size: cover;
       background-position-x: center;
       background-position-y: center;
@@ -136,7 +138,7 @@ const Project = styled.div`
 
   :nth-child(5) {
     ${ProjectImage} {
-      background-image: url(${hairq});
+      background-image: url(${tusomeni});
       background-size: cover;
       background-position-x: center;
       background-position-y: center;
@@ -146,7 +148,7 @@ const Project = styled.div`
 
   :nth-child(6) {
     ${ProjectImage} {
-      background-image: url(${shobill});
+      background-image: url(${hairq});
       background-size: cover;
       background-position-x: center;
       background-position-y: center;
@@ -215,6 +217,43 @@ function ProjectRow() {
     <ProjectContainer>
       <Project>
         <ProjectImage />
+        <SubHeading>Financial Hub FX</SubHeading>
+        <ProjectParagraph>
+          I am currently involved in the maitenance of the Financial Hub FX web platform. This involves 
+          implementing new features and fixing bugs.
+        </ProjectParagraph>
+        <a
+          title="Lennyarts"
+          href="https://www.financialhubfx.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <ProjectLink>
+            View Project <span>&#8250;</span>
+          </ProjectLink>
+        </a>
+      </Project>
+      <Project>
+        <ProjectImage />
+        <SubHeading>DedupeNames.com Website</SubHeading>
+        <ProjectParagraph>
+          This is a data analytics website that helps organizations perform dedupe functions on their 
+          data. The backend is a Python Flask API that performs the dedupe functions. The frontend is a react app 
+          styled with tailwindCSS and the whole project is hosted on a dedicated server.
+        </ProjectParagraph>
+        <a
+          title="Lennyarts"
+          href="https://lennyarts.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <ProjectLink>
+            View Project <span>&#8250;</span>
+          </ProjectLink>
+        </a>
+      </Project>
+      <Project>
+        <ProjectImage />
         <SubHeading>LennyArts Website</SubHeading>
         <ProjectParagraph>
           This is a portfolio website for LennyArts, a creative design agency.
@@ -254,18 +293,6 @@ function ProjectRow() {
       </Project>
       <Project>
         <ProjectImage />
-        <SubHeading>Hanshen</SubHeading>
-        <ProjectParagraph>
-          Website built for a consulting firm in Nairobi.
-        </ProjectParagraph>
-        <a title="Hanshen" href="/" target="_blank" rel="noreferrer">
-          <ProjectLink>
-            Under Development <span>&#8250;</span>
-          </ProjectLink>
-        </a>
-      </Project>
-      <Project>
-        <ProjectImage />
         <SubHeading>Tusomeni</SubHeading>
         <ProjectParagraph>
           This is an online learning resource platform for computer science
@@ -276,7 +303,7 @@ function ProjectRow() {
         </ProjectParagraph>
         <a
           title="Tusomeni"
-          href="https://tusomeni.netlify.com/"
+          href="https://tusomeni.codematata.com/"
           target="_blank"
           rel="noreferrer"
         >
@@ -301,19 +328,6 @@ function ProjectRow() {
         >
           <ProjectLink>
             View Project <span>&#8250;</span>
-          </ProjectLink>
-        </a>
-      </Project>
-      <Project>
-        <ProjectImage />
-        <SubHeading>Shobill: Art Website</SubHeading>
-        <ProjectParagraph>
-          Shobill is a platform that sell contemporary African art. This
-          platform was built using shopify.
-        </ProjectParagraph>
-        <a title="shobill" href="https://shobill.com" rel="noreferrer">
-          <ProjectLink>
-            View Project<span>&#8250;</span>
           </ProjectLink>
         </a>
       </Project>

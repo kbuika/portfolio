@@ -144,7 +144,7 @@ function Footer(props) {
                             title='Twitter - Steve Kibuika'
                             target='_blank'
                             rel='noreferrer'
-                            href='https://twitter.com/kibuikaCodes'
+                            href='https://twitter.com/the_kibuika'
                         >
                             twitter
                         </a>
