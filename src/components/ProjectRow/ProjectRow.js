@@ -282,7 +282,7 @@ function ProjectRow() {
         </ProjectParagraph>
         <a
           title="Codematata"
-          href="https://codematata.com/"
+          href="https://codematata.tusomeni.com/"
           target="_blank"
           rel="noreferrer"
         >
@@ -303,7 +303,7 @@ function ProjectRow() {
         </ProjectParagraph>
         <a
           title="Tusomeni"
-          href="https://tusomeni.codematata.com/"
+          href="https://tusomeni.com/"
           target="_blank"
           rel="noreferrer"
         >
